@@ -6,6 +6,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { S3Module } from './s3/s3.module';
 import { CompanyModule } from './company/company.module';
 import { AddressModule } from './address/address.module';
+import { GuestsModule } from './guests/guests.module';
 import * as path from 'path';
 
 @Module({
@@ -18,6 +19,7 @@ import * as path from 'path';
     S3Module,
     CompanyModule,
     AddressModule,
+    GuestsModule,
   ],
   controllers: [
     AppController,
