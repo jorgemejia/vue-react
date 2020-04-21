@@ -30,28 +30,35 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator';
+import { Component, Vue } from 'vue-property-decorator';
 import axios from "axios";
 import { server } from "../../helper";
 import router from "../../router/index";
 
+import VueRouter, { Route } from 'vue-router'
+
+declare module 'vue/types/vue' {
+  interface Vue {
+    $router: VueRouter;
+    $route: Route;
+  }
+}
 
 @Component
 export default class GuestEdit extends Vue {
 
 public myModel =   {
-               "first_name" : "",
+               "firstName" : "",
                "email": "",
-               "phone_number": "",
+               "phoneNumber": "",
                "id": ""
     };
 
   created() {
-    //this.customer = this.$route.params;
-    this.myModel["firstName"] = this.$route.params.customer.firstName;
-    this.myModel["email"] = this.$route.params.customer.email;
-    this.myModel["phoneNumber"] = this.$route.params.customer.phoneNumber;
-    this.myModel["id"] = this.$route.params.customer.id;
+    this.myModel["firstName"] = this.$route.params.customer["firstName"];
+    this.myModel["email"] = this.$route.params.customer["email"];
+    this.myModel["phoneNumber"] = this.$route.params.customer["phoneNumber"];
+    this.myModel["id"] = this.$route.params.customer["id"];
 
     console.log(this.$route.params);
   }

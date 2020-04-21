@@ -29,9 +29,9 @@
 
 
 <script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator';
+import { Component, Vue } from 'vue-property-decorator';
 import axios from "axios";
-import { server } from "../../helper";
+import server from "../../helper/index" 
 import router from "../../router/index";
 
 @Component
