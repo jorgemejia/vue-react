@@ -15,15 +15,11 @@ Dependencias adicionales:
 - npm i -g @nestjs/cli 
 - npm install -g typescript@lates
 
-Modificar el .env con la configuración de la base de datos a la cual se desea apuntar
+Modificar o crear el archivo .env en el proyecto api con la configuración de la base de datos a la cual se desea apuntar.
+En el proyecto admin-ui src/config/connection.js  cambiar la url que genera el comando yarn start al iniciar el proyecto api
+En el proyecto guests-crud modificar el archivo src/helper.js poner la misma url mencionada anteriormente. 
 
 # Notas
 - Usar yarn para levantar los servicios de api
 
-## Readme Navigation
 
-Further details on each of the systems contained in this project can be found via the following links:
-
-- _[Overview](README.md)_
-- [Frontend](admin-ui/README.md)
-- [Backend](api/README.md)
