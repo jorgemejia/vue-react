@@ -48,7 +48,7 @@ import { server } from "../../helper";
 @Component
 export default class GuestViewAll extends Vue {
 
-    public customers: any;
+    public customers: any = {};
 
     created() {
         this.fetchCustomers();
