@@ -1,46 +1,24 @@
-# React Admin + NestJS CRUD Quick Start
+# React + VueJS + NestJS CRUD 
 
-<p align="center">
-  <i><a href="README.md">Overview</a></i>
-  &nbsp;&nbsp;&nbsp;
-	<a href="admin-ui/README.md">Frontend</a>
-  &nbsp;&nbsp;&nbsp;
-	<a href="api/README.md">Backend</a>
-  &nbsp;&nbsp;&nbsp;
-</p>
 
-## Overview
 
-A boilerplate for API and Admin UI using [React Admin](https://github.com/marmelab/react-admin), [NestJS CRUD](https://github.com/nestjsx/crud) and MySQL.
 
-## Whats inside?
+## Instalación & Uso
+Tener instalado NodeJS, Yarn (o npm) y MySQL. 
+Instalar todas las dependencias en cada uno de los proyectos 
 
-A minimalistic setup for managing guests list.
+- usar el comando npm install
 
-## Installation & Usage
-You should have NodeJS, yarn (or npm) and MySQL installed. 
+Dependencias adicionales:
 
-This is a Mono-repo project containing a [Backend](api/README.md), [Frontend](admin-ui/README.md). Follow the README navigation links for details on each of these.
+- npm install -g @vue/cli 
+- npm i -g @nestjs/cli 
+- npm install -g typescript@lates
 
-## Key Features
+Modificar el .env con la configuración de la base de datos a la cual se desea apuntar
 
-**~~strikethrough text~~** means **TO DO**
-- **Strongly Typed** backend, leveraging the power of [TypeScript](https://www.typescriptlang.org/) and [NestJS](https://nestjs.com/)
-- ~~**Comprehensive authentication and authorization system** in-the-box~~
-- ~~**JWT Authentication** for robust and flexible security~~
-- ~~**Social Login** with Facebook (complete), Google, and Twitter (under development), using the more secure [Authorization Code Grant](https://www.oauth.com/oauth2-servers/server-side-apps/authorization-code/) flow~~
-- ~~**Secured-by-default** with 'allow list' approach~~
-- ~~**Flexible Caching** leveraging the powerful [cache-manager](https://www.npmjs.com/package/cache-manager) library~~
-- ~~**Console Logger Service** in-the-box~~
-- ~~**e2e Testing** pattern leveraging [Jest](https://jestjs.io/)~~
-
-## Structure
-
-- Frontend **Frontend Layer** example, built with React
-- Backend **Backend Layer** for handle REST API requests
-
-# Notes
-- The Frontend can run independently, but requires the Backend to be running to complete requests
+# Notas
+- Usar yarn para levantar los servicios de api
 
 ## Readme Navigation
 
