@@ -4,8 +4,6 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { S3Module } from './s3/s3.module';
-import { CompanyModule } from './company/company.module';
-import { AddressModule } from './address/address.module';
 import { GuestsModule } from './guests/guests.module';
 import * as path from 'path';
 
@@ -17,8 +15,6 @@ import * as path from 'path';
       inject: [ConfigService],
     }),
     S3Module,
-    CompanyModule,
-    AddressModule,
     GuestsModule,
   ],
   controllers: [
